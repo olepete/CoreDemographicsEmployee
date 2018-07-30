@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebAPI.Employees.Models.Domain\WebAPI.Employees.Models.Domain.csproj" />
+    <ProjectReference Include="..\WebAPI.Employees.Models.Public\WebAPI.Employees.Models.Public.csproj" />
+    <ProjectReference Include="..\WebAPI.Employes.Models.Serialization\WebAPI.Employes.Models.Serialization.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="applicationconfig.json" />
+  </ItemGroup>
+</Project>
