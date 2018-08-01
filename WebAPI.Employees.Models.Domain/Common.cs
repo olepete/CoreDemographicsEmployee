@@ -1,10 +1,18 @@
 ﻿using System;
 namespace WebAPI.Employees.Models.Domain
 {
-    public class Common
-    {
-        public Common()
-        {
-        }
-    }
+	public enum PhoneNumberTypes
+	{
+		Work,
+		Home,
+        SMS
+	};
+
+	public enum AddressTypes
+	{
+		Work,
+		Home,
+		Shipping,
+		Overnight
+	};
 }

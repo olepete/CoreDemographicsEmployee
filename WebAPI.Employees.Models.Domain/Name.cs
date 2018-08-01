@@ -1,10 +1,11 @@
 ﻿using System;
 namespace WebAPI.Employees.Models.Domain
 {
-    public class Names
+    public class Name
     {
-        public Names()
-        {
-        }
+		public string FirstName { get; set; }
+		public string MiddleName { get; set; }
+		public string LastName { get; set; }
+		public string Title { get; set; }
     }
 }
